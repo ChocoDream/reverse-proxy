@@ -50,7 +50,7 @@ https
       URL: ${"https://" + req.headers.host + req.url}
       user-agent: ${req.headers["user-agent"]}
       IP: ${ip}
-      location: ${JSON.stringify(lookup(ip))}
+      location: ${JSON.stringify(lookup(ip), null, "     ")}
       `);
 
       // Set/replace response headers
